@@ -11,6 +11,7 @@ export const authOptions={
         GoogleProvider({
           clientId: process.env.GOOGLE_ID,
           clientSecret: process.env.GOOGLE_SECRET,
+          callbackUrl: "http://localhost:3000/api/auth/callback/google",
         }),
         GithubProvider({
             clientId: process.env.GITHUB_ID,

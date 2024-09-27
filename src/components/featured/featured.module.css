@@ -3,10 +3,12 @@
   }
   
   .title {
-    font-size: 96px;
+    font-size: 4rem;
     font-weight: 300;
   }
-
+  .title2 {
+    font-size: 3rem;
+  }
   .post {
     margin-top: 60px;
     display: flex;

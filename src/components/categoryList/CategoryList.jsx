@@ -25,15 +25,17 @@ const CategoryList = async () => {
           <Link
             href="/blog?cat=style"
             className={`${styles.category} ${styles[item.slug]}`}
-            hey={item._id}
+            key={item._id}
           >
-           {item.img && (<Image
-              src={item.img}
-              alt=""
-              width={32}
-              height={32}
-              className={styles.image}
-            />)}
+            {item.img && (
+              <Image
+                src={item.img}
+                alt=""
+                width={32}
+                height={32}
+                className={styles.image}
+              />
+            )}
             {item.title}
           </Link>
         ))}
@@ -42,4 +44,4 @@ const CategoryList = async () => {
   );
 };
 
-export default CategoryList;
+export default CategoryList
