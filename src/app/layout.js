@@ -1,12 +1,12 @@
 import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
-import { Lora } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
 import AuthProvider from "@/providers/AuthProvider";
 
-const lora = Lora({ subsets: ["latin"] });
+const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Blog App",
@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lora.className}>
+      <body className={mont.className}>
         <AuthProvider>
           <ThemeContextProvider>
             <ThemeProvider>
